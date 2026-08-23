@@ -9,7 +9,7 @@ export function Hero() {
 
       <div className="relative mx-auto flex max-w-md flex-col items-center">
         <img
-          src="/logo.jpg"
+          src={`${import.meta.env.BASE_URL}logo.jpg`}
           alt="شعار شاورما جمرة"
           className="h-28 w-28 rounded-full object-cover ring-2 ring-fire-gold/50 shadow-lg shadow-fire-orange/20"
           onError={(e) => {

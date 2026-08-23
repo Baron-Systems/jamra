@@ -10,7 +10,7 @@ export function Header() {
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
         <div className="flex items-center gap-2">
           <img
-            src="/logo.jpg"
+            src={`${import.meta.env.BASE_URL}logo.jpg`}
             alt="شعار شاورما جمرة"
             className="h-9 w-9 rounded-full object-cover"
             onError={(e) => {

@@ -1,5 +1,11 @@
 import type { MenuItem } from "../types/menu";
 
+const BASE = import.meta.env.BASE_URL;
+
+function img(path: string): string {
+  return `${BASE}${path.replace(/^\//, "")}`;
+}
+
 export const MENU_ITEMS: MenuItem[] = [
   // === الوجبات ===
   {
@@ -7,7 +13,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "برايز",
     category: "meals",
     description: "تشمل بطاطا وصوصات",
-    image: "/braiz.webp",
+    image: img("/braiz.webp"),
     price: 25,
   },
   {
@@ -15,7 +21,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "شراك عراقي",
     category: "meals",
     description: "لفة شراك عراقية تشمل الصوص",
-    image: "/shrak_iraqi.webp",
+    image: img("/shrak_iraqi.webp"),
     price: 15,
   },
   {
@@ -23,7 +29,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "باشكا",
     category: "meals",
     description: "تشمل بطاطا وصوصات وسلطة",
-    image: "/bashka.webp",
+    image: img("/bashka.webp"),
     price: 22,
   },
   {
@@ -31,7 +37,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "برجر لحم",
     category: "meals",
     description: "يشمل بطاطا وسلطات وصوصات",
-    image: "/beef_burger.webp",
+    image: img("/beef_burger.webp"),
     price: 22,
     variants: [
       { id: "single", name: "عادي", price: 22 },
@@ -43,7 +49,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "كرسبي دجاج",
     category: "meals",
     description: "يشمل بطاطا وسلطات وخبز وصوصات",
-    image: "/crispy_chicken.webp",
+    image: img("/crispy_chicken.webp"),
     price: 21,
   },
   {
@@ -51,7 +57,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "شاورما عربي",
     category: "meals",
     description: "شاورما عربي",
-    image: "/arabic_shawarma.webp",
+    image: img("/arabic_shawarma.webp"),
     price: 19,
   },
 
@@ -61,7 +67,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "كولا",
     category: "drinks",
     description: "",
-    image: "/cola.webp",
+    image: img("/cola.webp"),
     price: 1,
   },
   {
@@ -69,7 +75,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "بلو عادي",
     category: "drinks",
     description: "",
-    image: "/blu_original.webp",
+    image: img("/blu_original.webp"),
     price: 4,
   },
   {
@@ -77,7 +83,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "بلو نعنع",
     category: "drinks",
     description: "",
-    image: "/blu_mint.webp",
+    image: img("/blu_mint.webp"),
     price: 4,
   },
   {
@@ -85,7 +91,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "بلو داي",
     category: "drinks",
     description: "",
-    image: "/blu_day.webp",
+    image: img("/blu_day.webp"),
     price: 4,
   },
   {
@@ -93,7 +99,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "XL",
     category: "drinks",
     description: "",
-    image: "/4xl.webp",
+    image: img("/4xl.webp"),
     price: 4,
   },
   {
@@ -101,7 +107,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "كول",
     category: "drinks",
     description: "",
-    image: "/cool.webp",
+    image: img("/cool.webp"),
     price: 2,
   },
 ];
