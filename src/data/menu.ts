@@ -60,6 +60,14 @@ export const MENU_ITEMS: MenuItem[] = [
     image: img("/arabic_shawarma.webp"),
     price: 19,
   },
+  {
+    id: "crispy-burger",
+    name: "برجر كرسبي",
+    category: "meals",
+    description: "يشمل بطاطا وصوصات",
+    image: img("/crispy_burger.webp"),
+    price: 20,
+  },
 
   // === المشروبات ===
   {
