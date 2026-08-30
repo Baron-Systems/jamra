@@ -30,7 +30,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: "meals",
     description: "تشمل بطاطا وصوصات وسلطة",
     image: img("/bashka.webp"),
-    price: 22,
+    price: 20,
   },
   {
     id: "burger",
@@ -50,7 +50,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: "meals",
     description: "يشمل بطاطا وسلطات وخبز وصوصات",
     image: img("/crispy_chicken.webp"),
-    price: 21,
+    price: 20,
   },
   {
     id: "arabic-shawarma",
@@ -66,7 +66,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: "meals",
     description: "يشمل بطاطا وصوصات",
     image: img("/crispy_burger.webp"),
-    price: 20,
+    price: 18,
   },
 
   // === المشروبات ===
